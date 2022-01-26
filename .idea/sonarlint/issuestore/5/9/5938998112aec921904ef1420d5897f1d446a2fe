@@ -1,0 +1,7 @@
+
+s	java:S116"^Rename this field "current_image_index" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥––ª
+o	java:S116"URename this field "iv_display" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªëñÞûÿÿÿÿ
+p
+java:S1450"URemove the "layout" field and declare it as a local variable in the relevant methods.(ÇþÉàÿÿÿÿÿ
+P	java:S125'"<This block of commented-out lines of code should be removed.(¼Š¢9
+V	java:S125/"<This block of commented-out lines of code should be removed.(é›–Úøÿÿÿÿ

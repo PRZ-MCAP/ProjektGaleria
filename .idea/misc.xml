@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStuidoProjekty/Projekt/app/src/main/res/layout/activity_main.xml" value="0.1762917933130699" />
+        <entry key="..\:/AndroidStuidoProjekty/Projekt/app/src/main/res/layout/activity_view_photo.xml" value="0.1773049645390071" />
+        <entry key="..\:/AndroidStuidoProjekty/Projekt/app/src/main/res/layout/single_item.xml" value="0.1762917933130699" />
+        <entry key="..\:/AndroidStuidoProjekty/app/src/main/res/layout/activity_main.xml" value="0.1762917933130699" />
+        <entry key="..\:/AndroidStuidoProjekty/app/src/main/res/layout/single_item.xml" value="0.33" />
+        <entry key="..\:/Users/Arek/AndroidStudioProjects/AndroidStuidoProjekty/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/Arek/AndroidStudioProjects/AndroidStuidoProjekty/app/src/main/res/layout/activity_view_photo.xml" value="0.333786231884058" />
+        <entry key="..\:/Users/Arek/AndroidStudioProjects/AndroidStuidoProjekty/app/src/main/res/layout/img_fullscreen.xml" value="0.26671732522796354" />
+        <entry key="..\:/Users/Arek/AndroidStudioProjects/AndroidStuidoProjekty/app/src/main/res/layout/single_item.xml" value="0.2127659574468085" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
