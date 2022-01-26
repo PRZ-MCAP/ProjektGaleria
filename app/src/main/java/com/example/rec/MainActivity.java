@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -25,7 +27,13 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView=findViewById(R.id.rvProgram);
-        layoutManager= new GridLayoutManager(getApplicationContext(),3);
+        int orientation = this.getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_PORTRAIT) {
+            layoutManager= new GridLayoutManager(getApplicationContext(),3);
+        } else {
+            layoutManager= new GridLayoutManager(getApplicationContext(),5);
+        }
+
         recyclerView.setLayoutManager(layoutManager);
         programAdapter = new ProgramAdapter(this,programImages);
         recyclerView.setAdapter(programAdapter);
