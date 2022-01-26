@@ -1,10 +1,13 @@
 package com.example.rec;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,7 +23,8 @@ public class MainActivity extends AppCompatActivity{
     RecyclerView.LayoutManager layoutManager;
 
     int[] programImages={R.drawable.img1,R.drawable.img2,R.drawable.img3,R.drawable.img4,
-            R.drawable.img5,R.drawable.img6,R.drawable.img7,R.drawable.img8};
+            R.drawable.img5,R.drawable.img6,R.drawable.img7,R.drawable.img8,R.drawable.img9,
+            R.drawable.img10,R.drawable.img11,R.drawable.img12};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,5 +41,12 @@ public class MainActivity extends AppCompatActivity{
         recyclerView.setLayoutManager(layoutManager);
         programAdapter = new ProgramAdapter(this,programImages);
         recyclerView.setAdapter(programAdapter);
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+            String[] a = {Manifest.permission.READ_EXTERNAL_STORAGE};
+            ActivityCompat.requestPermissions(this, a,121);
+        }
     }
+
+
 }

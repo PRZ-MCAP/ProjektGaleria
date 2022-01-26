@@ -15,6 +15,8 @@
         <entry key="..\:/Users/Arek/AndroidStudioProjects/AndroidStuidoProjekty/app/src/main/res/layout/activity_view_photo.xml" value="0.333786231884058" />
         <entry key="..\:/Users/Arek/AndroidStudioProjects/AndroidStuidoProjekty/app/src/main/res/layout/img_fullscreen.xml" value="0.26671732522796354" />
         <entry key="..\:/Users/Arek/AndroidStudioProjects/AndroidStuidoProjekty/app/src/main/res/layout/single_item.xml" value="0.2127659574468085" />
+        <entry key="..\:/Users/Arek/AndroidStudioProjects/ProjektGaleria/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/Arek/AndroidStudioProjects/ProjektGaleria/app/src/main/res/layout/single_item.xml" value="0.2674772036474164" />
       </map>
     </option>
   </component>
@@ -23,5 +25,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2674772036474164" />
+      </ProjectState>
+    </option>
   </component>
 </project>
