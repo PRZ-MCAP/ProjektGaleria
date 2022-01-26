@@ -1,11 +1,10 @@
-package com.example.rec;
+package com.example.Galeria;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class ViewPhotoActivity extends AppCompatActivity {
     private int current_image_index;
@@ -13,8 +12,7 @@ public class ViewPhotoActivity extends AppCompatActivity {
     private ConstraintLayout layout;
 
     int[] programImages={R.drawable.img1,R.drawable.img2,R.drawable.img3,R.drawable.img4,
-            R.drawable.img5,R.drawable.img6,R.drawable.img7,R.drawable.img8,R.drawable.img9,
-            R.drawable.img10,R.drawable.img11,R.drawable.img12};
+            R.drawable.img5,R.drawable.img6,R.drawable.img7,R.drawable.img8};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

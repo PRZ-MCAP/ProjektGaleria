@@ -1,20 +1,14 @@
-package com.example.rec;
+package com.example.Galeria;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -23,8 +17,7 @@ public class MainActivity extends AppCompatActivity{
     RecyclerView.LayoutManager layoutManager;
 
     int[] programImages={R.drawable.img1,R.drawable.img2,R.drawable.img3,R.drawable.img4,
-            R.drawable.img5,R.drawable.img6,R.drawable.img7,R.drawable.img8,R.drawable.img9,
-            R.drawable.img10,R.drawable.img11,R.drawable.img12};
+            R.drawable.img5,R.drawable.img6,R.drawable.img7,R.drawable.img8,};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +30,6 @@ public class MainActivity extends AppCompatActivity{
         } else {
             layoutManager= new GridLayoutManager(getApplicationContext(),5);
         }
-
         recyclerView.setLayoutManager(layoutManager);
         programAdapter = new ProgramAdapter(this,programImages);
         recyclerView.setAdapter(programAdapter);

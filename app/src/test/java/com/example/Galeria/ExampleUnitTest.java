@@ -1,4 +1,4 @@
-package com.example.rec;
+package com.example.Galeria;
 
 import org.junit.Test;
 
