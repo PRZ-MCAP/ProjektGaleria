@@ -40,6 +40,7 @@ public class ViewPhotoActivity extends AppCompatActivity {
                 super.onSwipeLeft();
                 current_image_index++;
                 current_image_index = current_image_index % programImages.length;
+                getIntent().putExtra("id", programImages[current_image_index]);
                 iv_display.setImageResource(programImages[current_image_index]);
             }
             @Override
@@ -49,6 +50,7 @@ public class ViewPhotoActivity extends AppCompatActivity {
                 if(current_image_index < 0){
                     current_image_index = programImages.length - 1;
                 }
+                getIntent().putExtra("id", programImages[current_image_index]);
                 iv_display.setImageResource(programImages[current_image_index]);
             }
         });

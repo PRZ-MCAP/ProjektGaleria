@@ -38,7 +38,7 @@ public class ProgramAdapter extends RecyclerView.Adapter<ProgramAdapter.ViewHold
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.single_item,parent,false);
         ViewHolder viewHolder = new ViewHolder(view);
-        //set click listener on picture
+        //set up click listener on picture
         viewHolder.getImage().setOnClickListener(this);
         return viewHolder;
     }
