@@ -10,16 +10,18 @@ public class ViewPhotoActivity extends AppCompatActivity {
     private int current_image_index;
     private ImageView iv_display;
     private ConstraintLayout layout;
+    private int imageID;
 
     int[] programImages={R.drawable.img1,R.drawable.img2,R.drawable.img3,R.drawable.img4,
             R.drawable.img5,R.drawable.img6,R.drawable.img7,R.drawable.img8,
-            R.drawable.img9,R.drawable.img10,R.drawable.img11,R.drawable.img12,};
+            R.drawable.img9,R.drawable.img10,R.drawable.img11,R.drawable.img12,
+            R.drawable.img13,R.drawable.img14,R.drawable.img15,R.drawable.img16};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle b = getIntent().getExtras();
-        int imageID = b.getInt("id");
+        imageID = b.getInt("id");
         setContentView(R.layout.activity_view_photo);
         displayImage(imageID);
         onSwipe();
@@ -36,7 +38,6 @@ public class ViewPhotoActivity extends AppCompatActivity {
             @Override
             public void onSwipeLeft() {
                 super.onSwipeLeft();
-                //Toast.makeText(ViewPhotoActivity.this, "Swipe Left gesture detected", Toast.LENGTH_SHORT).show();
                 current_image_index++;
                 current_image_index = current_image_index % programImages.length;
                 iv_display.setImageResource(programImages[current_image_index]);
@@ -44,7 +45,6 @@ public class ViewPhotoActivity extends AppCompatActivity {
             @Override
             public void onSwipeRight() {
                 super.onSwipeRight();
-                //Toast.makeText(ViewPhotoActivity.this, "Swipe Right gesture detected", Toast.LENGTH_SHORT).show();
                 current_image_index--;
                 if(current_image_index < 0){
                     current_image_index = programImages.length - 1;

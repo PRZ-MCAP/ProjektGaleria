@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity{
 
     int[] programImages={R.drawable.img1,R.drawable.img2,R.drawable.img3,R.drawable.img4,
             R.drawable.img5,R.drawable.img6,R.drawable.img7,R.drawable.img8,
-            R.drawable.img9,R.drawable.img10,R.drawable.img11,R.drawable.img12,};
+            R.drawable.img9,R.drawable.img10,R.drawable.img11,R.drawable.img12,
+            R.drawable.img13,R.drawable.img14,R.drawable.img15,R.drawable.img16};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +28,9 @@ public class MainActivity extends AppCompatActivity{
         recyclerView=findViewById(R.id.rvProgram);
         int orientation = this.getResources().getConfiguration().orientation;
         if (orientation == Configuration.ORIENTATION_PORTRAIT) {
-            layoutManager= new GridLayoutManager(getApplicationContext(),3);
+            layoutManager= new GridLayoutManager(this,3);
         } else {
-            layoutManager= new GridLayoutManager(getApplicationContext(),5);
+            layoutManager= new GridLayoutManager(this,5);
         }
         recyclerView.setLayoutManager(layoutManager);
         programAdapter = new ProgramAdapter(this,programImages);

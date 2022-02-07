@@ -16,7 +16,6 @@ public class ProgramAdapter extends RecyclerView.Adapter<ProgramAdapter.ViewHold
     int[] images;
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
-        //TextView rowName;
         ImageView rowImage;
 
         public ViewHolder(@NonNull View itemView) {
@@ -59,14 +58,10 @@ public class ProgramAdapter extends RecyclerView.Adapter<ProgramAdapter.ViewHold
     @Override
     public void onClick(View v) {
         // View v is clicked object
-        switch(v.getId()){
-            case R.id.imageView:
+        if(v.getId()==R.id.imageView){
                 //get tag of imageID from view
                 Integer imageID = (Integer)v.getTag();
                 launchViewPhoto(v, imageID);
-                break;
-            default:
-                break;
         }
     }
 
